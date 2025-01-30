@@ -1,0 +1,92 @@
+/* CORE STYLES */
+
+html {
+    background-color: rgba(27, 38, 54, 1);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    color: white;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background: none;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("assets/fonts/nunito-v16-latin-regular.woff2") format("woff2");
+}
+
+#app {
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+
+
+/* ELEMENTS */
+
+.input-element {
+    font-size: 1rem;
+    color: #d5d5d5;
+    background: none;
+    text-align: center;
+    border: transparent;
+    outline: none;
+    height: 20vh;
+}
+
+.input-element:hover {
+    scale: calc(1.5)
+}
+
+.result {
+    font-weight: bold;
+    font-size: x-large;
+    text-shadow: #53cbef;
+}
+.result::selection {
+    background-color: #53cbef;
+    color: black;
+}
+
+button {
+    background-color: #444141;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+}
+
+button:hover {
+    background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+    animation: slidernbw 5s linear infinite;
+    color: #000;
+}
+
+@keyframes slidernbw {
+    to {
+        background-position: 20vw;
+    }
+}
