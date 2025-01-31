@@ -60,7 +60,10 @@ body {
 .result {
     font-weight: bold;
     font-size: x-large;
-    text-shadow: #53cbef;
+    text-shadow: aqua;
+    text-wrap: wrap;
+    width: 300px;
+    line-height: 100px;
 }
 .result::selection {
     background-color: #53cbef;
