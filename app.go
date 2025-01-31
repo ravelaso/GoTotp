@@ -26,6 +26,9 @@ func (a *App) startup(ctx context.Context) {
 
 // returns a totp token from the given token
 func (a *App) GetTotp(token string) string {
+	if token == "" {
+		return "Please provide a token"
+	}
 	now := time.Now()
 	passcode, err := totp.GenerateCode(token, now)
 	if err != nil {
